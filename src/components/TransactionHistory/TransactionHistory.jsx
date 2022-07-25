@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import TransactionItem from '../TransactionItem/TransactionItem';
-import style from './TransactionHistory.module.css';
 import { Table, HeadRow } from './TransactionHistory.styled';
 
 export default function TransactionHistory({ items }) {
@@ -10,9 +9,9 @@ export default function TransactionHistory({ items }) {
         <Table>
           <thead>
             <HeadRow>
-              <th className={style.head}>Type</th>
-              <th className={style.head}>Amount</th>
-              <th className={style.head}>Currency</th>
+              <th>Type</th>
+              <th>Amount</th>
+              <th>Currency</th>
             </HeadRow>
           </thead>
           <tbody>

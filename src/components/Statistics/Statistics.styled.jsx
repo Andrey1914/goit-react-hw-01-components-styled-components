@@ -19,7 +19,6 @@ export const StatisticsWrap = styled.div`
 export const Title = styled.h2`
   font-size: 25px;
   font-weight: 700;
-  /* color: var(--third-text-color); */
 `;
 
 export const List = styled.ul`

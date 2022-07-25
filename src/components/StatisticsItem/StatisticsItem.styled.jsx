@@ -12,20 +12,13 @@ export const Item = styled.li`
     border-right: 1px solid var(--border-color);
   }
 
-  background-color: ${props => {
-    switch (props.bgcItem) {
-      case 'docx':
-        return 'rgb(121, 199, 255)';
-      case 'pdf':
-        return 'rgb(155, 41, 255)';
-      case 'mp3':
-        return 'rgb(219, 43, 43)';
-      case 'psd':
-        return 'rgb(21, 193, 138)';
-      default:
-        return 'rgb(21, 193, 138)';
-    }
-  }};
+  background-color: ${props =>
+    ({
+      docx: 'rgb(121, 199, 255)',
+      pdf: 'rgb(155, 41, 255)',
+      mp3: 'rgb(219, 43, 43)',
+      psd: 'rgb(21, 193, 138)',
+    }[props.bgcItem] || '#cfcfcf')};
 `;
 
 export const Label = styled.span`
